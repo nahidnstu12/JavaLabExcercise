@@ -1,0 +1,33 @@
+**color select code
+
+private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
+        // TODO add your handling code here:
+        if(jc1.isSelected()){
+         jt.setBackground(colors[jcom.getSelectedIndex()]);
+         jt.setForeground(Color.BLACK);
+        }
+        else if(jc2.isSelected())
+        {
+         jt.setForeground(colors[jcom.getSelectedIndex()]);
+         jt.setBackground(Color.white);
+        }
+    }//GEN-LAST:event_b1ActionPerformed
+
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+        // TODO add your handling code here:
+        jt.setBackground(Color.white);
+         jt.setForeground(Color.BLACK);
+    }//GEN-LAST:eve
+
+temparature convertion
+
+private void jtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtActionPerformed
+        // TODO add your handling code here:
+        double input = Double.parseDouble(jt.getText());
+        double res = (5.0/9.0*(input-32));
+        //System.out.println(res);
+        //lb.setText("");
+        String r = String.format("%.3f", res);
+        lb1.setText(r);
+      
+    }//GEN-LAST:event_jtActionPerformed
